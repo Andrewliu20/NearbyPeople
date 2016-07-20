@@ -13,6 +13,11 @@
 		DF0D52681D360F6E00C46339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0D52661D360F6E00C46339 /* Main.storyboard */; };
 		DF0D526A1D360F6E00C46339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0D52691D360F6E00C46339 /* Assets.xcassets */; };
 		DF0D526D1D360F6E00C46339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0D526B1D360F6E00C46339 /* LaunchScreen.storyboard */; };
+		DF0D527A1D36188E00C46339 /* NearbyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D52791D36188E00C46339 /* NearbyTableViewController.m */; };
+		DF0D527D1D36239C00C46339 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D527C1D36239C00C46339 /* People.m */; };
+		DF0D52811D36387900C46339 /* PeopleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D527F1D36387900C46339 /* PeopleCell.m */; };
+		DF0D52821D36387900C46339 /* PeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D52801D36387900C46339 /* PeopleCell.xib */; };
+		DF0D52841D36453E00C46339 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0D52831D36453E00C46339 /* me.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,14 @@
 		DF0D52691D360F6E00C46339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0D526C1D360F6E00C46339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0D526E1D360F6E00C46339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0D52781D36188E00C46339 /* NearbyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyTableViewController.h; sourceTree = "<group>"; };
+		DF0D52791D36188E00C46339 /* NearbyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyTableViewController.m; sourceTree = "<group>"; };
+		DF0D527B1D36239C00C46339 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		DF0D527C1D36239C00C46339 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		DF0D527E1D36387900C46339 /* PeopleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleCell.h; sourceTree = "<group>"; };
+		DF0D527F1D36387900C46339 /* PeopleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleCell.m; sourceTree = "<group>"; };
+		DF0D52801D36387900C46339 /* PeopleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleCell.xib; sourceTree = "<group>"; };
+		DF0D52831D36453E00C46339 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +71,18 @@
 		DF0D525C1D360F6E00C46339 /* NearbyPeople */ = {
 			isa = PBXGroup;
 			children = (
+				DF0D52831D36453E00C46339 /* me.png */,
 				DF0D52601D360F6E00C46339 /* AppDelegate.h */,
 				DF0D52611D360F6E00C46339 /* AppDelegate.m */,
 				DF0D52631D360F6E00C46339 /* ViewController.h */,
 				DF0D52641D360F6E00C46339 /* ViewController.m */,
+				DF0D52781D36188E00C46339 /* NearbyTableViewController.h */,
+				DF0D52791D36188E00C46339 /* NearbyTableViewController.m */,
+				DF0D527B1D36239C00C46339 /* People.h */,
+				DF0D527C1D36239C00C46339 /* People.m */,
+				DF0D527E1D36387900C46339 /* PeopleCell.h */,
+				DF0D527F1D36387900C46339 /* PeopleCell.m */,
+				DF0D52801D36387900C46339 /* PeopleCell.xib */,
 				DF0D52661D360F6E00C46339 /* Main.storyboard */,
 				DF0D52691D360F6E00C46339 /* Assets.xcassets */,
 				DF0D526B1D360F6E00C46339 /* LaunchScreen.storyboard */,
@@ -110,6 +131,7 @@
 				TargetAttributes = {
 					DF0D52591D360F6E00C46339 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6E4YDHVATQ;
 					};
 				};
 			};
@@ -136,6 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0D52841D36453E00C46339 /* me.png in Resources */,
+				DF0D52821D36387900C46339 /* PeopleCell.xib in Resources */,
 				DF0D526D1D360F6E00C46339 /* LaunchScreen.storyboard in Resources */,
 				DF0D526A1D360F6E00C46339 /* Assets.xcassets in Resources */,
 				DF0D52681D360F6E00C46339 /* Main.storyboard in Resources */,
@@ -151,6 +175,9 @@
 			files = (
 				DF0D52651D360F6E00C46339 /* ViewController.m in Sources */,
 				DF0D52621D360F6E00C46339 /* AppDelegate.m in Sources */,
+				DF0D527D1D36239C00C46339 /* People.m in Sources */,
+				DF0D527A1D36188E00C46339 /* NearbyTableViewController.m in Sources */,
+				DF0D52811D36387900C46339 /* PeopleCell.m in Sources */,
 				DF0D525F1D360F6E00C46339 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NearbyPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewliu.niudu.NearbyPeople;
@@ -274,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NearbyPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewliu.niudu.NearbyPeople;
@@ -300,6 +329,7 @@
 				DF0D52731D360F6E00C46339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
